@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1769d2">
+  <meta name="description" content="NEXFIT — free workouts, exercise guidance and progress tracking for every level.">
+  <title>NEXFIT — Level Up Your Fitness</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="NEXFIT home" data-page="home">
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span>NEXFIT</span>
+    </a>
+    <span class="free-pill">100% FREE</span>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR NEXT LEVEL STARTS HERE</p>
+        <h1>Move better.<br><span>Feel stronger.</span></h1>
+        <p class="hero-sub">Simple workouts, useful guidance and progress you can be proud of. Start wherever you are.</p>
+        <button class="primary-btn" data-go="workouts">Explore workouts <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="hero-art" aria-label="NEXFIT fitness graphic">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="hero-symbol">N<span>+</span></div>
+        <div class="art-caption">LEVEL UP<br><b>AT YOUR PACE</b></div>
+      </div>
+    </section>
+
+    <nav class="tabs" aria-label="Main navigation">
+      <button class="tab active" data-page="home">Home</button>
+      <button class="tab" data-page="workouts">Workouts</button>
+      <button class="tab" data-page="library">Exercise library</button>
+      <button class="tab" data-page="progress">My progress</button>
+    </nav>
+
+    <section id="page-home" class="page active">
+      <div class="section-heading">
+        <div><p class="eyebrow">WELCOME TO NEXFIT</p><h2>Your fitness journey, your pace.</h2></div>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card blue-card">
+          <div class="card-icon">✦</div>
+          <p class="eyebrow light">A GOOD PLACE TO START</p>
+          <h3>Small steps<br>add up.</h3>
+          <p>Choose a comfortable routine, learn the movements and build consistency over time.</p>
+          <button class="text-btn light-btn" data-go="workouts">Find a workout →</button>
+        </article>
+        <article class="feature-card">
+          <div class="card-icon pale">✓</div>
+          <p class="eyebrow">YOUR ACTIVITY</p>
+          <h3 id="home-count">0 sessions</h3>
+          <p>Completed sessions are counted here on this device.</p>
+          <button class="text-btn" data-go="progress">View progress →</button>
+        </article>
+      </div>
+      <div class="section-heading compact"><div><p class="eyebrow">PICK UP WHERE YOU ARE</p><h2>Explore NEXFIT</h2></div></div>
+      <div class="quick-grid">
+        <button class="quick-card" data-go="workouts"><span>🏋️</span><b>Workout plans</b><small>Choose a routine</small></button>
+        <button class="quick-card" data-go="library"><span>📘</span><b>Exercise library</b><small>Learn the basics</small></button>
+        <button class="quick-card" data-go="progress"><span>📈</span><b>Progress</b><small>Celebrate effort</small></button>
+      </div>
+      <p class="notice">NEXFIT is for general fitness education. Move at a pace that feels comfortable, use good technique and ask a qualified professional for guidance when needed.</p>
+    </section>
+
+    <section id="page-workouts" class="page">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR ROUTINE</p><h2>Workout plans</h2><p class="muted">Choose a beginner-friendly session. Rest whenever you need.</p></div></div>
+      <div class="workout-grid">
+        <article class="workout-card"><div class="workout-icon">◈</div><span class="tag">ALL LEVELS</span><h3>Full Body Basics</h3><p>A gentle introduction to foundational movements.</p><button class="outline-btn" data-start="full">View workout</button></article>
+        <article class="workout-card"><div class="workout-icon">↗</div><span class="tag">ALL LEVELS</span><h3>Upper Body Basics</h3><p>Explore simple pushing and pulling patterns.</p><button class="outline-btn" data-start="upper">View workout</button></article>
+        <article class="workout-card"><div class="workout-icon">⌁</div><span class="tag">ALL LEVELS</span><h3>Lower Body Basics</h3><p>Practice balance and lower-body movement.</p><button class="outline-btn" data-start="lower">View workout</button></article>
+        <article class="workout-card"><div class="workout-icon">✧</div><span class="tag">GENTLE MOVEMENT</span><h3>Mobility & Reset</h3><p>Easy mobility ideas and a calmer pace.</p><button class="outline-btn" data-start="mobility">View workout</button></article>
+      </div>
+      <div id="workout-detail" class="detail-panel hidden"></div>
+    </section>
+
+    <section id="page-library" class="page">
+      <div class="section-heading"><div><p class="eyebrow">LEARN THE MOVEMENTS</p><h2>Exercise library</h2><p class="muted">A few simple movements to explore. Technique comes before intensity.</p></div></div>
+      <div class="library-list">
+        <article><span class="move-icon">01</span><div><h3>Bodyweight squat</h3><p>Practice sitting your hips back and standing with control. Use a comfortable range.</p></div></article>
+        <article><span class="move-icon">02</span><div><h3>Wall push-up</h3><p>Place your hands on a stable wall and practice a controlled push away.</p></div></article>
+        <article><span class="move-icon">03</span><div><h3>Bird-dog</h3><p>From hands and knees, extend opposite arm and leg only as far as you can stay steady.</p></div></article>
+        <article><span class="move-icon">04</span><div><h3>Glute bridge</h3><p>Lie on your back with knees bent and lift your hips gently, keeping the movement controlled.</p></div></article>
+        <article><span class="move-icon">05</span><div><h3>Standing calf raise</h3><p>Hold a stable support if needed and slowly rise onto your toes, then lower.</p></div></article>
+      </div>
+    </section>
+
+    <section id="page-progress" class="page">
+      <div class="section-heading"><div><p class="eyebrow">EVERY STEP COUNTS</p><h2>Your progress</h2><p class="muted">Track consistency without comparing yourself to anyone else.</p></div></div>
+      <div class="progress-panel">
+        <div><span class="stat-label">SESSIONS COMPLETED</span><strong id="progress-count">0</strong><p class="muted">Saved on this device</p></div>
+        <div class="progress-mark">✓</div>
+      </div>
+      <div class="feature-card">
+        <h3>Celebrate your effort.</h3>
+        <p>When you finish a workout, mark it complete to add it to your activity count.</p>
+        <button class="primary-btn" data-go="workouts">Choose a workout</button>
+        <button id="reset-progress" class="text-btn reset-btn">Reset local progress</button>
+      </div>
+      <p class="notice">This first version stores progress in your browser on this device. It does not yet sync between devices or use member accounts.</p>
+    </section>
+
+    <footer><div class="footer-brand">NEXFIT<span>+</span></div><p>LEVEL UP YOUR FITNESS.</p><small>Free fitness guidance for every level. © <span id="year"></span> NEXFIT.</small></footer>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
